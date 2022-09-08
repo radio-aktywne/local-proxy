@@ -1,0 +1,16 @@
+tls:
+  stores:
+    default:
+      defaultCertificate:
+        certFile: /etc/certs/frontend/cert.pem
+        keyFile: /etc/certs/frontend/key.pem
+  certificates:
+    - certFile: /etc/certs/frontend/cert.pem
+      keyFile: /etc/certs/frontend/key.pem
+
+http:
+  routers:
+    api:
+      rule: "HostRegexp(`{prefix:(.*\\.)?}{{ env "PROXY_DOMAIN" | default "localhost" }}`)"
+      service: api@internal
+      priority: 1
