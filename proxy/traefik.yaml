@@ -1,0 +1,26 @@
+api:
+  dashboard: true
+
+entryPoints:
+  http:
+    address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: "https"
+          scheme: "https"
+  https:
+    address: ":443"
+    http:
+      tls: { }
+
+serversTransport:
+  rootCAs:
+    - /etc/certs/backend/ca.pem
+
+providers:
+  file:
+    directory: ./conf/
+    watch: true
+  docker:
+    exposedByDefault: false

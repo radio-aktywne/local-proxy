@@ -1,0 +1,4 @@
+**
+!proxy/conf/**
+!proxy/traefik.yaml
+!proxy/start.sh
