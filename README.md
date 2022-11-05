@@ -4,8 +4,8 @@
 
 proxy for local development 🛰️
 
-[![Testing docker build](https://github.com/radio-aktywne/proxy/actions/workflows/docker-build.yml/badge.svg)](https://github.com/radio-aktywne/proxy/actions/workflows/docker-build.yml)
-[![Deploying docs](https://github.com/radio-aktywne/proxy/actions/workflows/docs.yml/badge.svg)](https://github.com/radio-aktywne/proxy/actions/workflows/docs.yml)
+[![Build](https://github.com/radio-aktywne/proxy/actions/workflows/build.yaml/badge.svg)](https://github.com/radio-aktywne/proxy/actions/workflows/build.yaml)
+[![Docs](https://github.com/radio-aktywne/proxy/actions/workflows/docs.yaml/badge.svg)](https://github.com/radio-aktywne/proxy/actions/workflows/docs.yaml)
 
 </div>
 
@@ -13,7 +13,9 @@ proxy for local development 🛰️
 
 This `README` provides info about the development process.
 
-For more info about `proxy` itself see `proxy/README.md` or [docs](https://radio-aktywne.github.io/proxy).
+For more info about `proxy` itself see
+[package `README`](proxy/README.md) or
+[docs](https://radio-aktywne.github.io/proxy).
 
 ## Quickstart
 
